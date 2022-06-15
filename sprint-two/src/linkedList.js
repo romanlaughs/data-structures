@@ -51,24 +51,3 @@ var Node = function(value, next = null) {
  */
 
 
-// var node.head = {
-//   head: 12,
-//   data: 12,
-//   tail: false,
-//   next: {
-//     head: false,
-//     data: 06,
-//     tail: false;
-//     next: {
-//       head: false,
-//       data: 72,
-//       tail: false;
-//       next: {
-//         head: false,
-//         data: 26,
-//         tail: true;
-//         next: null;
-//       }
-//     }
-//   }
-// }
