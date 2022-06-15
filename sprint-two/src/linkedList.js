@@ -28,7 +28,6 @@ var LinkedList = function() {
         return true;
       }
       currentIndex = currentIndex.next;
-      console.log(currentIndex);
 
     }
     return false;
