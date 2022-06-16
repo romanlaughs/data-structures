@@ -87,10 +87,7 @@ Graph.prototype.forEachNode = function(cb) {
   // var slice = key.slice();
   for (i in key) {
     // slice[i] = cb(slice[i]);
-    console.log('Before: ' + [key[i]]);
     cb(Number([key[i]]));
-    console.log('After: ' + [key[i]]);
-    console.log('Function: ' + cb);
     // delete this.storage[key[i]];
   }
 };
