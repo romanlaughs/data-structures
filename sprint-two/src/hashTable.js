@@ -27,7 +27,6 @@ HashTable.prototype.retrieve = function(k) {
   if (this._storage[index].length > 1) {
     for (var i = 0; i < this._storage[index].length; i++) {
       if (this._storage[index][i][0] === k ) {
-        console.log(this._storage[index][i]);
         return this._storage[index][i][1];
       }
     }
