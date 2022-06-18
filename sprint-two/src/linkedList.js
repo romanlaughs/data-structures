@@ -4,6 +4,9 @@ var LinkedList = function() {
   list.tail = null;
 
   list.addToTail = function(value) {
+    if (value === undefined) {
+      return 'error';
+    }
 
     if (this.head === null) {
       this.head = Node(value);

@@ -13,6 +13,9 @@ var BinarySearchTree = function(value) {
 var biTreeMethods = {};
 
 biTreeMethods.insert = function(value) {
+  if (value === undefined) {
+    return 'error';
+  }
 
   if (value > this.value && this.right === null) {
     this.right = new BinarySearchTree(value);
@@ -27,6 +30,9 @@ biTreeMethods.insert = function(value) {
 };
 
 biTreeMethods.contains = function(value) {
+  if (value === undefined) {
+    return 'error';
+  }
 
   if (this.value === value) {
     return true;
@@ -41,6 +47,9 @@ biTreeMethods.contains = function(value) {
 };
 
 biTreeMethods.depthFirstLog = function(target) {
+  if (target === undefined) {
+    return 'error';
+  }
   target(this.value);
   if (this.left) {
     this.left.depthFirstLog(target);

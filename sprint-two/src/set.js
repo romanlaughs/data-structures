@@ -7,6 +7,9 @@ var Set = function() {
 var setPrototype = {};
 
 setPrototype.add = function(item) {
+  if (item === undefined) {
+    return 'error';
+  }
   if (!this.contains(item)) {
     this._storage.push(item);
   }
@@ -14,6 +17,9 @@ setPrototype.add = function(item) {
 };
 
 setPrototype.contains = function(item) {
+  if (item === undefined) {
+    return 'error';
+  }
   for (i in this._storage) {
     if (this._storage[i] === item) {
       return true;

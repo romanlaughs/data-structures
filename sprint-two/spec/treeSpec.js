@@ -41,4 +41,8 @@ describe('tree', function() {
     expect(tree.contains(8)).to.equal(true);
   });
 
+  it('should throw error if value is not defined', function() {
+    expect(tree.addChild()).to.equal('error');
+  });
+
 });
