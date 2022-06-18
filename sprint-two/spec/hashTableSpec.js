@@ -73,4 +73,8 @@ describe('hashTable', function() {
     hashTable.remove('Mr.');
     expect(hashTable._limit).to.equal(8);
   });
+
+  it('should throw error if value is not defined', function() {
+    expect(hashTable.insert()).to.equal('error');
+  });
 });
